@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&family=Caveat:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", var(--font-sans);
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-cursive: "Caveat", var(--font-sans);
+}
+
+/* Animations and custom layout styling */
+@keyframes pulse-gentle {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 4px 20px rgba(255, 122, 48, 0.2);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px rgba(255, 122, 48, 0.4);
+  }
+}
+
+.animate-pulse-gentle {
+  animation: pulse-gentle 3s infinite ease-in-out;
+}
+
+/* Base custom styles to guarantee a luxury, high-end editorial feel */
+body {
+  background-color: #fafbfc;
+  color: #1e293b;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+/* Elegant radial gradients behind cards and sections */
+.ambient-bg-blue {
+  background: radial-gradient(circle at 10% 20%, rgba(224, 242, 254, 0.4) 0%, rgba(255, 255, 255, 0) 60%);
+}
+
+.ambient-bg-mint {
+  background: radial-gradient(circle at 90% 80%, rgba(240, 253, 244, 0.4) 0%, rgba(255, 255, 255, 0) 60%);
+}
+
+.ambient-bg-orange {
+  background: radial-gradient(circle at 50% 50%, rgba(255, 122, 48, 0.05) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+/* Thin premium glass border */
+.premium-border {
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.premium-card-shadow {
+  box-shadow: 0 10px 30px -10px rgba(148, 163, 184, 0.12), 0 1px 3px rgba(148, 163, 184, 0.03);
+}
+
+.premium-card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.premium-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -15px rgba(148, 163, 184, 0.25), 0 1px 3px rgba(148, 163, 184, 0.05);
+}

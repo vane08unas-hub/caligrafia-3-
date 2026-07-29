@@ -1,0 +1,8 @@
+{
+  "name": "Remix Mega Pack de Caligrafía Infantil",
+  "description": "Landing page de conversión premium para el Mega Pack de Caligrafía Infantil de Hotmart. Más de 500 actividades de trazo y caligrafía para niños de 4 a 8 años.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
