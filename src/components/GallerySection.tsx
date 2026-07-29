@@ -6,10 +6,10 @@
 import { motion } from "motion/react";
 
 // Import real worksheet assets
-import imgWorksheet1 from "../assets/images/regenerated_image_1785328991364.jpg";
-import imgWorksheet2 from "../assets/images/regenerated_image_1785328992661.jpg";
-import imgWorksheet3 from "../assets/images/regenerated_image_1785328994521.jpg";
-import imgWorksheet4 from "../assets/images/regenerated_image_1785328998897.jpg";
+import imgWorksheet1 from "../assets/images/regenerated_image_1785334116693.png";
+import imgAbecedarioGuiado from "../assets/images/regenerated_image_1785332985597.png";
+import imgWorksheet3 from "../assets/images/regenerated_image_1785334142148.png";
+import imgWorksheet4 from "../assets/images/regenerated_image_1785334144177.png";
 
 export default function GallerySection() {
   const worksheets = [
@@ -19,7 +19,7 @@ export default function GallerySection() {
       desc: "Líneas, curvas y calentamiento motor inicial."
     },
     {
-      img: imgWorksheet2,
+      img: imgAbecedarioGuiado,
       title: "Abecedario guiado",
       desc: "Direccionalidad correcta letra por letra."
     },
